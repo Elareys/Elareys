@@ -44,6 +44,8 @@ def reg_age(message):
             age = int(message.text)
         except Exception:
             bot.send_message(message.from_user.id, "Вводите цифрами!")
+	    
+	    #КНОПКИ
 
     keyboard = types.InlineKeyboardMarkup()
     key_yes = types.InlineKeyboardButton(text='Да', callback_data='yes')
